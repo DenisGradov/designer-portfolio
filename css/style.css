@@ -130,3 +130,65 @@ body {
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
 }
+.wrapper .Services__description {
+  color: #8643dc;
+  font-family: Red Hat Display;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.wrapper .Services__line {
+  margin: 10px 0px 15px 0px;
+  width: 50px;
+  height: 2px;
+  background: #8643dc;
+}
+.wrapper .Services__title {
+  max-width: 245px;
+  color: #25202f;
+  font-family: Red Hat Display;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.wrapper .Services .iLoveToDo {
+  margin: 50px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.wrapper .Services .iLoveToDo .iLoveToDo-block-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wrapper .Services .iLoveToDo .iLoveToDo-block-top__title {
+  margin-left: 20px;
+  display: inline-block;
+  color: #25202f;
+  font-family: Red Hat Display;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.wrapper .Services .iLoveToDo .iLoveToDo-block__text {
+  max-width: 350px;
+  color: #47444e;
+  font-family: Red Hat Display;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 200% */
+}

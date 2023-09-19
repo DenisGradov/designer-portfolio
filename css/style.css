@@ -268,3 +268,91 @@ body {
   -webkit-box-shadow: 0px 2px 5px 0px rgba(220, 192, 255, 0.3);
           box-shadow: 0px 2px 5px 0px rgba(220, 192, 255, 0.3);
 }
+.wrapper .Clients {
+  margin-top: 168px;
+}
+.wrapper .Clients__description {
+  color: #8643dc;
+  font-family: Red Hat Display;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.wrapper .Clients__line {
+  margin: 10px 0px 15px 0px;
+  width: 50px;
+  height: 2px;
+  background: #8643dc;
+}
+.wrapper .Clients__title {
+  max-width: 225px;
+  color: #25202f;
+  font-family: Red Hat Display;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+}
+.wrapper .Clients .Clients-block {
+  margin-top: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+.wrapper .Clients .Clients-block .client {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 170px;
+  height: 170px;
+  border-radius: 10px;
+}
+.wrapper .Clients .Clients-block .client:nth-child(1) {
+  border: 1px solid #ffe7f0;
+  background: #fff6fa;
+}
+.wrapper .Clients .Clients-block .client:nth-child(2) {
+  border: 1px solid #caffe1;
+  background: #edfff5;
+}
+.wrapper .Clients .Clients-block .client:nth-child(3) {
+  border: 1px solid #ddf5ff;
+  background: #f5fcff;
+}
+.wrapper .Clients .Clients-block .client:nth-child(4) {
+  border: 1px solid #ffeec9;
+  background: #fffbf2;
+}
+.wrapper .Clients .Clients-block .client:nth-child(5) {
+  border: 1px solid #dbffc3;
+  background: #f4ffed;
+}
+.wrapper .Clients .Clients-block .client__img {
+  height: 50px;
+}
+.wrapper .Clients .Clients-block .client__title {
+  color: #000;
+  text-align: center;
+  font-family: Red Hat Display;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}

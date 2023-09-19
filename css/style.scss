@@ -231,4 +231,77 @@ body {
       }
     }
   }
+  .Clients {
+    margin-top: 168px;
+    &__description {
+      color: #8643dc;
+      font-family: Red Hat Display;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    &__line {
+      margin: 10px 0px 15px 0px;
+      width: 50px;
+      height: 2px;
+      background: #8643dc;
+    }
+    &__title {
+      max-width: 225px;
+      color: #25202f;
+      font-family: Red Hat Display;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: bold;
+      line-height: normal;
+    }
+    .Clients-block {
+      margin-top: 44px;
+      display: flex;
+      justify-content: space-between;
+      align-self: center;
+      .client {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 170px;
+        height: 170px;
+        border-radius: 10px;
+        &:nth-child(1) {
+          border: 1px solid #ffe7f0;
+          background: #fff6fa;
+        }
+        &:nth-child(2) {
+          border: 1px solid #caffe1;
+          background: #edfff5;
+        }
+        &:nth-child(3) {
+          border: 1px solid #ddf5ff;
+          background: #f5fcff;
+        }
+        &:nth-child(4) {
+          border: 1px solid #ffeec9;
+          background: #fffbf2;
+        }
+        &:nth-child(5) {
+          border: 1px solid #dbffc3;
+          background: #f4ffed;
+        }
+        &__img {
+          height: 50px;
+        }
+        &__title {
+          color: #000;
+          text-align: center;
+          font-family: Red Hat Display;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+      }
+    }
+  }
 }

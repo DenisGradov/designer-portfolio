@@ -1,0 +1,51 @@
+@import url(https://fonts.googleapis.com/css?family=Red+Hat+Display:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+body {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.wrapper {
+  max-width: 1110px;
+  @media (min-width: 1110px) {
+    width: 1100px;
+  }
+  .header {
+    margin: 0 auto;
+    width: 100%;
+    margin: 65px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      width: 40px;
+      height: 40px;
+    }
+    .navigation {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      &_item {
+        a {
+          margin: 0 50px;
+          font-family: Red Hat Display;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          color: #7e7f86;
+          text-decoration: none;
+        }
+      }
+      #about {
+        a {
+          color: #25202f;
+        }
+      }
+    }
+    .burger-menu {
+      padding: 20px;
+      background-color: white;
+    }
+  }
+}

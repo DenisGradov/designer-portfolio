@@ -1,0 +1,69 @@
+@import url(https://fonts.googleapis.com/css?family=Red+Hat+Display:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+body {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper {
+  max-width: 1110px;
+}
+@media (min-width: 1110px) {
+  .wrapper {
+    width: 1100px;
+  }
+}
+.wrapper .header {
+  margin: 0 auto;
+  width: 100%;
+  margin: 65px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wrapper .header .logo {
+  width: 40px;
+  height: 40px;
+}
+.wrapper .header .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wrapper .header .navigation_item a {
+  margin: 0 50px;
+  font-family: Red Hat Display;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #7e7f86;
+  text-decoration: none;
+}
+.wrapper .header .navigation #about a {
+  color: #25202f;
+}
+.wrapper .header .burger-menu {
+  padding: 20px;
+  background-color: white;
+}

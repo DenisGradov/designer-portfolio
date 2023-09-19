@@ -6,9 +6,15 @@ body {
   flex-direction: column;
 }
 .wrapper {
+  width: 100%;
   max-width: 1110px;
   @media (min-width: 1110px) {
     width: 1100px;
+  }
+  @media (max-width: 1110px) {
+    position: absolute;
+    top: 0px;
+    left: 0px;
   }
   .header {
     margin: 0 auto;
@@ -20,11 +26,19 @@ body {
     .logo {
       width: 40px;
       height: 40px;
+      @media (max-width: 436px) {
+        width: 30px;
+        height: 30px;
+      }
     }
     .navigation {
       display: flex;
       justify-content: start;
       align-items: center;
+      @media (max-width: 800px) and (min-width: 348px) {
+        margin: 0 auto;
+      }
+
       &_item {
         a {
           margin: 0 50px;
@@ -35,6 +49,15 @@ body {
           line-height: normal;
           color: #7e7f86;
           text-decoration: none;
+          @media (max-width: 800px) {
+            margin: 0 10px;
+          }
+          @media (max-width: 436px) {
+            font-size: 17px;
+          }
+          @media (max-width: 348px) {
+            display: none;
+          }
         }
       }
       #about {
@@ -46,6 +69,9 @@ body {
     .burger-menu {
       padding: 20px;
       background-color: white;
+      @media (max-width: 436px) {
+        padding: 10px;
+      }
     }
   }
 
@@ -54,7 +80,21 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 1130px) {
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 892px) {
+      margin-top: -20px;
+      justify-content: center;
+      flex-direction: column-reverse;
+      text-align: center;
+    }
     .text-block {
+      @media (max-width: 893px) {
+        margin-top: 20px;
+      }
       &__text {
         span {
           &:nth-child(1) {
@@ -75,6 +115,11 @@ body {
             font-style: normal;
             font-weight: 700;
             line-height: 120%;
+            @media (max-width: 369px) {
+              margin: 10px 0 15px 0;
+              font-size: 40px;
+              line-height: 110%;
+            }
           }
           &:nth-child(3) {
             display: block;
@@ -84,6 +129,9 @@ body {
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+            @media (max-width: 369px) {
+              font-size: 20px;
+            }
           }
         }
       }
@@ -109,9 +157,13 @@ body {
       }
     }
     .photo {
+      @media (max-width: 800px) {
+        width: 80vw;
+      }
     }
   }
   .Services {
+    margin-top: 40px;
     &__description {
       color: #8643dc;
       font-family: Red Hat Display;
@@ -119,12 +171,20 @@ body {
       font-style: normal;
       font-weight: 400;
       line-height: normal;
+      @media (max-width: 730px) {
+        margin: 0 auto;
+        text-align: center;
+      }
     }
     &__line {
       margin: 10px 0px 15px 0px;
       width: 50px;
       height: 2px;
       background: #8643dc;
+      @media (max-width: 730px) {
+        margin: 0 auto;
+        text-align: center;
+      }
     }
     &__title {
       max-width: 245px;
@@ -134,16 +194,29 @@ body {
       font-style: normal;
       font-weight: 700;
       line-height: normal;
+      @media (max-width: 730px) {
+        margin: 0 auto;
+        text-align: center;
+      }
     }
     .iLoveToDo {
       margin: 50px 15px;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      @media (max-width: 1110px) {
+        flex-wrap: wrap;
+      }
+      @media (max-width: 730px) {
+        justify-content: center;
+      }
       .iLoveToDo-block {
         &-top {
           display: flex;
           align-items: center;
+          @media (max-width: 730px) {
+            justify-content: center;
+          }
           &__img {
           }
           &__title {
@@ -165,6 +238,9 @@ body {
           font-style: normal;
           font-weight: 400;
           line-height: 32px; /* 200% */
+          @media (max-width: 730px) {
+            text-align: center;
+          }
         }
       }
     }
@@ -174,6 +250,11 @@ body {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      @media (max-width: 1120px) {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+      }
       .Portfolio-top-left {
         &__description {
           color: #8643dc;
@@ -182,12 +263,20 @@ body {
           font-style: normal;
           font-weight: 400;
           line-height: normal;
+          @media (max-width: 1120px) {
+            margin: 0 auto;
+            text-align: center;
+          }
         }
         &__line {
           margin: 10px 0px 15px 0px;
           width: 50px;
           height: 2px;
           background: #8643dc;
+          @media (max-width: 1120px) {
+            margin: 0 auto;
+            text-align: center;
+          }
         }
         &__title {
           max-width: 245px;
@@ -197,6 +286,10 @@ body {
           font-style: normal;
           font-weight: 700;
           line-height: normal;
+          @media (max-width: 1120px) {
+            margin: 0 auto;
+            text-align: center;
+          }
         }
       }
       .Portfolio-top-right {
@@ -217,22 +310,34 @@ body {
           margin-left: 10px;
           width: 24px;
         }
+        @media (max-width: 1120px) {
+          margin: 0 auto;
+          text-align: center;
+        }
       }
     }
     .Portfolio-bottom {
+      @media (max-width: 1120px) {
+        margin-top: 20px;
+      }
       display: flex;
       justify-content: space-between;
       &__img {
         width: 540px;
-        height: 427px;
         flex-shrink: 0;
         border-radius: 10px;
         box-shadow: 0px 2px 5px 0px rgba(220, 192, 255, 0.3);
+        @media (max-width: 1120px) {
+          width: 45vw;
+        }
       }
     }
   }
   .Clients {
     margin-top: 168px;
+    @media (max-width: 450px) {
+      margin-top: 68px;
+    }
     &__description {
       color: #8643dc;
       font-family: Red Hat Display;
@@ -240,12 +345,20 @@ body {
       font-style: normal;
       font-weight: 400;
       line-height: normal;
+      @media (max-width: 1120px) {
+        margin: 0 auto;
+        text-align: center;
+      }
     }
     &__line {
       margin: 10px 0px 15px 0px;
       width: 50px;
       height: 2px;
       background: #8643dc;
+      @media (max-width: 1120px) {
+        margin: 0 auto;
+        text-align: center;
+      }
     }
     &__title {
       max-width: 225px;
@@ -255,13 +368,22 @@ body {
       font-style: normal;
       font-weight: bold;
       line-height: normal;
+      @media (max-width: 1120px) {
+        margin: 0 auto;
+        text-align: center;
+      }
     }
     .Clients-block {
       margin-top: 44px;
       display: flex;
       justify-content: space-between;
       align-self: center;
+
+      @media (max-width: 450px) {
+        justify-content: center;
+      }
       .client {
+        margin: 5px;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -269,6 +391,14 @@ body {
         width: 170px;
         height: 170px;
         border-radius: 10px;
+
+        @media (max-width: 1120px) {
+          width: 18vw;
+          height: 18vw;
+        }
+        @media (max-width: 450px) {
+          margin: 1px;
+        }
         &:nth-child(1) {
           border: 1px solid #ffe7f0;
           background: #fff6fa;
@@ -290,7 +420,10 @@ body {
           background: #f4ffed;
         }
         &__img {
-          height: 50px;
+          @media (max-width: 1120px) {
+            width: 8vw;
+            height: 8vw;
+          }
         }
         &__title {
           color: #000;
@@ -300,6 +433,9 @@ body {
           font-style: normal;
           font-weight: 500;
           line-height: normal;
+          @media (max-width: 1120px) {
+            font-size: 3vw;
+          }
         }
       }
     }
@@ -316,9 +452,22 @@ body {
       flex-direction: column;
       align-items: center;
       text-align: center;
+      @media (max-width: 1110px) {
+        justify-content: center;
+        background: linear-gradient(
+          180deg,
+          rgba(197, 255, 176, 0.2) 0%,
+          rgba(203, 163, 255, 0.2) 100%
+        );
+      }
       &-top {
         align-self: flex-start;
         text-align: left;
+        @media (max-width: 1110px) {
+          padding-top: 50px;
+          text-align: center;
+          align-self: center;
+        }
         &__description {
           z-index: 10;
           color: #8643dc;
@@ -327,6 +476,10 @@ body {
           font-style: normal;
           font-weight: 400;
           line-height: normal;
+          @media (max-width: 1110px) {
+            margin: 0 auto;
+            text-align: center;
+          }
         }
         &__line {
           z-index: 10;
@@ -334,6 +487,10 @@ body {
           width: 50px;
           height: 2px;
           background: #8643dc;
+          @media (max-width: 1110px) {
+            margin: 0 auto;
+            text-align: center;
+          }
         }
         &__title {
           z-index: 10;
@@ -344,6 +501,10 @@ body {
           font-style: normal;
           font-weight: bold;
           line-height: normal;
+          @media (max-width: 1110px) {
+            margin: 0 auto;
+            text-align: center;
+          }
         }
       }
       &-main {
@@ -394,6 +555,9 @@ body {
           display: flex;
           align-items: center;
           justify-content: center;
+          @media (max-width: 1110px) {
+            padding-bottom: 20px;
+          }
           &__point {
             z-index: 101;
             margin: 0 6px;
@@ -423,11 +587,16 @@ body {
           rgba(197, 255, 176, 0.2) 0%,
           rgba(203, 163, 255, 0.2) 100%
         );
-        filter: blur(2px);
+        @media (max-width: 1110px) {
+          display: none;
+        }
         &-top {
           width: 800px;
           display: flex;
           justify-content: space-between;
+          @media (max-width: 1110px) {
+            display: none;
+          }
           &__img {
             z-index: 1;
             background: url(<path-to-image>), lightgray 50% / cover no-repeat;
@@ -447,6 +616,15 @@ body {
     margin-top: 100px;
     display: flex;
     justify-content: space-around;
+    @media (max-width: 1110px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    @media (max-width: 850px) {
+      overflow: hidden;
+    }
     .Blog-left {
       &__description {
         z-index: 10;
@@ -463,6 +641,10 @@ body {
         width: 50px;
         height: 2px;
         background: #8643dc;
+        @media (max-width: 1110px) {
+          margin: 0 auto;
+          text-align: center;
+        }
       }
       &__title {
         z-index: 10;
@@ -533,10 +715,17 @@ body {
   }
   .ContactMe {
     margin-top: 150px;
+    overflow: hidden;
     .ContactMe-top {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      @media (max-width: 1110px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
       .ContactMe-top-left {
         &__description {
           z-index: 10;
@@ -553,6 +742,10 @@ body {
           width: 50px;
           height: 2px;
           background: #8643dc;
+
+          @media (max-width: 1110px) {
+            margin: 0 auto;
+          }
         }
         &__title {
           z-index: 10;
@@ -563,6 +756,10 @@ body {
           font-style: normal;
           font-weight: bold;
           line-height: normal;
+          @media (max-width: 573px) {
+            font-family: Red Hat Display;
+            font-size: 26px;
+          }
         }
       }
       .ContactMe-top-right {
@@ -580,6 +777,12 @@ body {
     }
     .ContactMe-bottom {
       &-form {
+        @media (max-width: 1110px) {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+        }
         &__input {
           display: inline-block;
           padding: 17px 5px;
@@ -602,6 +805,12 @@ body {
             font-weight: 400;
             line-height: normal;
           }
+
+          @media (max-width: 1110px) {
+            margin: 0 auto;
+            width: 80%;
+            text-align: center;
+          }
         }
       }
     }
@@ -609,6 +818,11 @@ body {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      @media (max-width: 1110px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
       &__button {
         margin-top: 30px;
         padding: 18px 49px;
@@ -624,6 +838,9 @@ body {
       }
     }
     .form-bottom-right {
+      @media (max-width: 1110px) {
+        margin-top: 10px;
+      }
       &__img {
         width: 18px;
         &:first-child {

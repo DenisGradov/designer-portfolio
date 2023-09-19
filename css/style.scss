@@ -310,7 +310,7 @@ body {
     position: relative;
 
     .Testimonials-block {
-      z-index: 10;
+      z-index: 12;
       display: flex;
       justify-content: space-between;
       flex-direction: column;
@@ -439,6 +439,94 @@ body {
           &:nth-child(2) {
             margin-top: 130px;
           }
+        }
+      }
+    }
+  }
+  .Blog {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    .Blog-left {
+      &__description {
+        z-index: 10;
+        color: #8643dc;
+        font-family: Red Hat Display;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      &__line {
+        z-index: 10;
+        margin: 10px 0px 15px 0px;
+        width: 50px;
+        height: 2px;
+        background: #8643dc;
+      }
+      &__title {
+        z-index: 10;
+        max-width: 225px;
+        color: #25202f;
+        font-family: Red Hat Display;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: normal;
+      }
+    }
+    .Blog-right {
+      display: flex;
+      justify-content: space-around;
+      position: relative;
+      .Blog-right-item {
+        margin: 0 15px;
+        .img1 {
+          width: 350px;
+        }
+        .img2 {
+          width: 255px;
+        }
+        .img3 {
+          width: 255px;
+        }
+        div {
+          position: absolute;
+          top: 0px;
+          width: 255px;
+          height: 350px;
+          background: linear-gradient(
+            180deg,
+            rgba(196, 196, 196, 0) 0%,
+            #25202f 100%
+          );
+        }
+        &__date {
+          margin-top: 205px;
+          margin-left: 20px;
+          color: #fff;
+          font-family: Red Hat Display;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+        &__title {
+          margin-left: 20px;
+          color: #fff;
+          font-family: Red Hat Display;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          max-width: 197px;
+        }
+        &__datef {
+          margin-top: 20px;
+          color: #8643dc;
+        }
+        &__titlef {
+          color: #000;
         }
       }
     }

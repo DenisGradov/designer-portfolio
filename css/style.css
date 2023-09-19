@@ -362,7 +362,7 @@ body {
   position: relative;
 }
 .wrapper .Testimonials .Testimonials-block {
-  z-index: 10;
+  z-index: 12;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -517,4 +517,93 @@ body {
 }
 .wrapper .Testimonials .Testimonials-block-bg-top:nth-child(2) {
   margin-top: 130px;
+}
+.wrapper .Blog {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.wrapper .Blog .Blog-left__description {
+  z-index: 10;
+  color: #8643dc;
+  font-family: Red Hat Display;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.wrapper .Blog .Blog-left__line {
+  z-index: 10;
+  margin: 10px 0px 15px 0px;
+  width: 50px;
+  height: 2px;
+  background: #8643dc;
+}
+.wrapper .Blog .Blog-left__title {
+  z-index: 10;
+  max-width: 225px;
+  color: #25202f;
+  font-family: Red Hat Display;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+}
+.wrapper .Blog .Blog-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+}
+.wrapper .Blog .Blog-right .Blog-right-item {
+  margin: 0 15px;
+}
+.wrapper .Blog .Blog-right .Blog-right-item .img1 {
+  width: 350px;
+}
+.wrapper .Blog .Blog-right .Blog-right-item .img2 {
+  width: 255px;
+}
+.wrapper .Blog .Blog-right .Blog-right-item .img3 {
+  width: 255px;
+}
+.wrapper .Blog .Blog-right .Blog-right-item div {
+  position: absolute;
+  top: 0px;
+  width: 255px;
+  height: 350px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(196, 196, 196, 0)), to(#25202f));
+  background: linear-gradient(180deg, rgba(196, 196, 196, 0) 0%, #25202f 100%);
+}
+.wrapper .Blog .Blog-right .Blog-right-item__date {
+  margin-top: 205px;
+  margin-left: 20px;
+  color: #fff;
+  font-family: Red Hat Display;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.wrapper .Blog .Blog-right .Blog-right-item__title {
+  margin-left: 20px;
+  color: #fff;
+  font-family: Red Hat Display;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  max-width: 197px;
+}
+.wrapper .Blog .Blog-right .Blog-right-item__datef {
+  margin-top: 20px;
+  color: #8643dc;
+}
+.wrapper .Blog .Blog-right .Blog-right-item__titlef {
+  color: #000;
 }

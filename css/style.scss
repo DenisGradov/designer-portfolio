@@ -531,4 +531,105 @@ body {
       }
     }
   }
+  .ContactMe {
+    margin-top: 150px;
+    .ContactMe-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .ContactMe-top-left {
+        &__description {
+          z-index: 10;
+          color: #8643dc;
+          font-family: Red Hat Display;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+        &__line {
+          z-index: 10;
+          margin: 10px 0px 15px 0px;
+          width: 50px;
+          height: 2px;
+          background: #8643dc;
+        }
+        &__title {
+          z-index: 10;
+          max-width: 512px;
+          color: #25202f;
+          font-family: Red Hat Display;
+          font-size: 36px;
+          font-style: normal;
+          font-weight: bold;
+          line-height: normal;
+        }
+      }
+      .ContactMe-top-right {
+        &__text {
+          color: #8643dc;
+          font-family: Roboto;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          text-decoration-line: underline;
+          text-transform: lowercase;
+        }
+      }
+    }
+    .ContactMe-bottom {
+      &-form {
+        &__input {
+          display: inline-block;
+          padding: 17px 5px;
+          color: #a8a0b0;
+          font-family: Red Hat Display;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          width: 100%;
+          border: 1px solid #dad2e3;
+          border-top: 0px;
+          border-right: 0px;
+          border-left: 0px;
+          &::placeholder {
+            color: #a8a0b0;
+            font-family: Red Hat Display;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+      }
+    }
+    .form-bottom-form {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &__button {
+        margin-top: 30px;
+        padding: 18px 49px;
+        color: #fff;
+        text-align: center;
+        font-family: Red Hat Display;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        border-radius: 100px;
+        background: #8643dc;
+      }
+    }
+    .form-bottom-right {
+      &__img {
+        width: 18px;
+        &:first-child {
+          margin-right: 16px;
+        }
+      }
+    }
+  }
 }

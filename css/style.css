@@ -607,3 +607,138 @@ body {
 .wrapper .Blog .Blog-right .Blog-right-item__titlef {
   color: #000;
 }
+.wrapper .ContactMe {
+  margin-top: 150px;
+}
+.wrapper .ContactMe .ContactMe-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wrapper .ContactMe .ContactMe-top .ContactMe-top-left__description {
+  z-index: 10;
+  color: #8643dc;
+  font-family: Red Hat Display;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.wrapper .ContactMe .ContactMe-top .ContactMe-top-left__line {
+  z-index: 10;
+  margin: 10px 0px 15px 0px;
+  width: 50px;
+  height: 2px;
+  background: #8643dc;
+}
+.wrapper .ContactMe .ContactMe-top .ContactMe-top-left__title {
+  z-index: 10;
+  max-width: 512px;
+  color: #25202f;
+  font-family: Red Hat Display;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+}
+.wrapper .ContactMe .ContactMe-top .ContactMe-top-right__text {
+  color: #8643dc;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-transform: lowercase;
+}
+.wrapper .ContactMe .ContactMe-bottom-form__input {
+  display: inline-block;
+  padding: 17px 5px;
+  color: #a8a0b0;
+  font-family: Red Hat Display;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 100%;
+  border: 1px solid #dad2e3;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+}
+.wrapper .ContactMe .ContactMe-bottom-form__input::-webkit-input-placeholder {
+  color: #a8a0b0;
+  font-family: Red Hat Display;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.wrapper .ContactMe .ContactMe-bottom-form__input::-moz-placeholder {
+  color: #a8a0b0;
+  font-family: Red Hat Display;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.wrapper .ContactMe .ContactMe-bottom-form__input:-ms-input-placeholder {
+  color: #a8a0b0;
+  font-family: Red Hat Display;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.wrapper .ContactMe .ContactMe-bottom-form__input::-ms-input-placeholder {
+  color: #a8a0b0;
+  font-family: Red Hat Display;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.wrapper .ContactMe .ContactMe-bottom-form__input::placeholder {
+  color: #a8a0b0;
+  font-family: Red Hat Display;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.wrapper .ContactMe .form-bottom-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wrapper .ContactMe .form-bottom-form__button {
+  margin-top: 30px;
+  padding: 18px 49px;
+  color: #fff;
+  text-align: center;
+  font-family: Red Hat Display;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 100px;
+  background: #8643dc;
+}
+.wrapper .ContactMe .form-bottom-right__img {
+  width: 18px;
+}
+.wrapper .ContactMe .form-bottom-right__img:first-child {
+  margin-right: 16px;
+}

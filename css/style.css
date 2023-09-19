@@ -67,3 +67,66 @@ body {
   padding: 20px;
   background-color: white;
 }
+.wrapper .i-am {
+  margin-top: -150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.wrapper .i-am .text-block__text span:nth-child(1) {
+  display: block;
+  color: #666;
+  font-family: Red Hat Display;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 28.8px */
+}
+.wrapper .i-am .text-block__text span:nth-child(2) {
+  margin: 15px 0 20px 0;
+  display: block;
+  color: #25202f;
+  font-family: Red Hat Display;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+.wrapper .i-am .text-block__text span:nth-child(3) {
+  display: block;
+  color: #25202f;
+  font-family: Red Hat Display;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.wrapper .i-am .text-block__button {
+  display: inline-block;
+  margin-top: 50px;
+  padding: 14px 48px;
+  color: #fff;
+  text-align: center;
+  font-family: Red Hat Display;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 100px;
+  background: #8643dc;
+  text-decoration: none;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+.wrapper .i-am .text-block__button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}

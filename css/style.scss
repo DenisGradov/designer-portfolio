@@ -632,4 +632,29 @@ body {
       }
     }
   }
+  .footer {
+    margin-top: 140px;
+    &__title {
+      color: #21232d;
+      text-align: center;
+      font-family: Red Hat Display;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+    .footer-social {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      a {
+        &__img {
+          width: 50px;
+        }
+        &:nth-child(2) {
+          margin: 0 40px;
+        }
+      }
+    }
+  }
 }

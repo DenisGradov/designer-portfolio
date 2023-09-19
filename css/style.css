@@ -742,3 +742,32 @@ body {
 .wrapper .ContactMe .form-bottom-right__img:first-child {
   margin-right: 16px;
 }
+.wrapper .footer {
+  margin-top: 140px;
+}
+.wrapper .footer__title {
+  color: #21232d;
+  text-align: center;
+  font-family: Red Hat Display;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.wrapper .footer .footer-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.wrapper .footer .footer-social a__img {
+  width: 50px;
+}
+.wrapper .footer .footer-social a:nth-child(2) {
+  margin: 0 40px;
+}
